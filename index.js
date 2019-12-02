@@ -11,6 +11,7 @@ function dodgerAtBoundary(){
   if (positionNum === 0 || positionNum === 360){
     return true;
   }
+  console.log("THROUGH DODGER AT BOUNDARY FALSE")
   return false;
 }
 //Move left
