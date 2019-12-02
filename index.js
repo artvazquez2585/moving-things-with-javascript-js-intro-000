@@ -1,9 +1,9 @@
 const app = "I don't do much."
 //returns dodger position as an integer value
 function getNumericPosition(){
-  var currentPosition = $("#dodger")[0].style.left.replace('px','');
-  var currentPositionNum = parseInt(currentPosition,10);
-  return currentPositionNum;
+  var position = $("#dodger")[0].style.left.replace('px','');
+  var positionNum = parseInt(currentPosition,10);
+  return positionNum;
 }
 //checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
