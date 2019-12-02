@@ -19,7 +19,7 @@ function dodgerLeft(){
   console.log("THROUGH DODGERLEFT")
   if(dodgerAtBoundary()===false){
     console.log("INSIDE CONDITIONAL DODGER LEFT " + positionNum)
-    $("#dodger")[0].style.left = `${positionNum}px`;}
+    $("#dodger")[0].style.left = `${positionNum-1}px`;}
 }
 
 $(document).on("keydown",function(e){
