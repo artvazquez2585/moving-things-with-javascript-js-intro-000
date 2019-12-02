@@ -25,6 +25,7 @@ $(document).on("keydown",function(e){
   switch (e.which) {
 //Left Arrow
     case 37:
+      getNumericPosition();
       dodgerLeft();
       break;
     default:
