@@ -6,6 +6,7 @@ function dodgerLeft(){
 }
 
 $("document").on("keydown",function(e){
+  console.log(e.key);
   switch (e.which) {
 //Left Arrow
     case 27:
