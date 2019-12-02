@@ -1,6 +1,8 @@
 const app = "I don't do much."
+//Set Constant for directions
 const leftDir = -1;
 const rightDir = 1;
+
 var positionNum
 //returns dodger position as an integer value
 function getNumericPosition(){
@@ -25,7 +27,7 @@ $(document).on("keydown",function(e){
 //Left Arrow
     case 37:
       getNumericPosition();
-      dodgerLeft();
+      dodgerLeft(leftDir);
       break;
     case 39:
     getNumericPosition();
