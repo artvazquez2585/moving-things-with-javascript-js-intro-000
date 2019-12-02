@@ -5,7 +5,7 @@ function dodgerLeft(){
   $("#dodger")[0].style.left = `$("leftNumbers")px`;
 }
 
-$("body").on("keydown",function(e){
+$("document").on("keydown",function(e){
   switch (e.which) {
 //Left Arrow
     case 27:
