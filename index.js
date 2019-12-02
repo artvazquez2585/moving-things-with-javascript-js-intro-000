@@ -1,4 +1,8 @@
 const app = "I don't do much."
+//Don't go beyond boundaries
+function checkBoundary(){
+  var currentPosition = $("#dodger")[0].style.left.replace('px','');
+}
 //Move left
 function dodgerLeft(){
   var left = $("#dodger")[0].style.left.replace('px','');
