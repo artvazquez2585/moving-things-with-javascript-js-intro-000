@@ -27,11 +27,11 @@ $(document).on("keydown",function(e){
 //Left Arrow
     case 37:
       getNumericPosition();
-      dodgerLeft(leftDir);
+      dodgerMove(leftDir);
       break;
     case 39:
     getNumericPosition(rightDir);
-    dodgerRight();
+    dodgerMove();
     default:
   }
 })
