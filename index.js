@@ -1,7 +1,7 @@
 const app = "I don't do much."
 //returns dodger position as an integer value
 function getNumericPosition(){
-  
+
 }
 //checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
