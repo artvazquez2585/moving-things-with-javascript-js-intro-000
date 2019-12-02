@@ -11,23 +11,18 @@ function dodgerAtBoundary(){
   if (positionNum === 0 || positionNum === 360){
     return true;
   }
-  console.log("THROUGH DODGER AT BOUNDARY FALSE")
   return false;
 }
 //Move left
 function dodgerLeft(){
-  console.log("THROUGH DODGERLEFT")
   if(dodgerAtBoundary()===false){
-    console.log("INSIDE CONDITIONAL DODGER LEFT " + positionNum)
     $("#dodger")[0].style.left = `${positionNum-1}px`;}
 }
 
 $(document).on("keydown",function(e){
-  console.log(e.which);
   switch (e.which) {
 //Left Arrow
     case 37:
-    console.log("THROUGH CASE")
       getNumericPosition();
       dodgerLeft();
       break;
