@@ -14,7 +14,7 @@ function dodgerAtBoundary(){
 }
 //Move left
 function dodgerLeft(){
-  if(!==dodgerAtBoundary()){
+  if(dodgerAtBoundary()===false){
     $("#dodger")[0].style.left = `${positionNum}px`;}
 }
 
