@@ -7,7 +7,7 @@ function getNumericPosition(){
 }
 //checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
-  if (PositionNum === 0 || PositionNum === 360){
+  if (positionNum === 0 || positionNum === 360){
     return true;
   }
   return false;
