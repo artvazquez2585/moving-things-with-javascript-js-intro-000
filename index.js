@@ -23,6 +23,7 @@ $(document).on("keydown",function(e){
   switch (e.which) {
 //Left Arrow
     case 37:
+    console.log("THROUGH CASE")
       getNumericPosition();
       dodgerLeft();
       break;
