@@ -11,6 +11,6 @@ $("#dodger").on("keydown",function(e){
       dodgerLeft();
       break;
     default:
-      
+
   }
 })
