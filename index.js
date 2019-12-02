@@ -4,6 +4,7 @@ var positionNum
 function getNumericPosition(){
   var position = $("#dodger")[0].style.left.replace('px','');
   positionNum = parseInt(position,10);
+  console.log("got numeric position " + positionNum)
 }
 //checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
