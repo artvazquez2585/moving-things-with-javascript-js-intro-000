@@ -37,6 +37,3 @@ $(document).on("keydown",function(e){
     default:
   }
 })
-//document.addEventListener("keydown",function(e){
-//  console.log(e.which);
-//})
