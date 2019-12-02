@@ -19,7 +19,7 @@ function dodgerAtBoundary(){
   }
 }
 //Move left
-function dodgerMove(dir){
+function dodgerLeft(dir){
   if(dodgerAtBoundary()==="leftBoundary" && dir === leftDir){
     $("#dodger")[0].style.left = `${positionNum+dir}px`;}
 }
