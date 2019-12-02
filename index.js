@@ -18,7 +18,7 @@ function dodgerAtBoundary(){
 function dodgerLeft(){
   console.log("THROUGH DODGERLEFT")
   if(dodgerAtBoundary()===false){
-    console.log("INSIDE CONDITIONAL DODGER LEFT")
+    console.log("INSIDE CONDITIONAL DODGER LEFT " + positionNum)
     $("#dodger")[0].style.left = `${positionNum}px`;}
 }
 
