@@ -1,5 +1,5 @@
 const app = "I don't do much."
-
+//Move left
 function dodgerLeft(){
   var left = $("#dodger")[0].style.left.replace('px','');
   var leftNumbers = parseint(left,10) - 1;
