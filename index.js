@@ -15,8 +15,7 @@ function dodgerAtBoundary(){
 //Move left
 function dodgerLeft(){
   if(!==dodgerAtBoundary()){
-    var leftNumbers = parseInt(left,10) - 1;
-    $("#dodger")[0].style.left = `${leftNumbers}px`;}
+    $("#dodger")[0].style.left = `${positionNum}px`;}
 }
 
 $(document).on("keydown",function(e){
