@@ -3,7 +3,7 @@ var positionNum
 //returns dodger position as an integer value
 function getNumericPosition(){
   var position = $("#dodger")[0].style.left.replace('px','');
-  positionNum = parseInt(currentPosition,10);
+  positionNum = parseInt(position,10);
 }
 //checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
