@@ -1,13 +1,16 @@
 const app = "I don't do much."
-
-function getNumericPosition
-//checks for Dodger at boundary
+//returns dodger position as an integer value
+function getNumericPosition(){
+  
+}
+//checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
   var currentPosition = $("#dodger")[0].style.left.replace('px','');
   var currentPositionNum = parseInt(currentPosition,10);
   if (currentPositionNum === 0 || currentPositionNum === 360){
     return true;
   }
+  return false;
 }
 //Move left
 function dodgerLeft(){
