@@ -11,14 +11,16 @@ function getNumericPosition(){
 }
 //checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
-  if (positionNum === 0 || positionNum === 360){
-    return "LeftBoundary";
+  if (positionNum === 0){
+    return "leftBoundary";
   }
-  return false;
+  else if (positionNum === 360){
+    return "rightBoundary";
+  }  
 }
 //Move left
 function dodgerMove(dir){
-  if(dodgerAtBoundary()===false){
+  if(dodgerAtBoundary()==="leftBoundary" && dir === leftDir){
     $("#dodger")[0].style.left = `${positionNum+dir}px`;}
 }
 
@@ -27,11 +29,11 @@ $(document).on("keydown",function(e){
 //Left Arrow
     case 37:
       getNumericPosition();
-      dodgerMove(leftDir);
+      dodgerLeft(leftDir);
       break;
     case 39:
     getNumericPosition(rightDir);
-    dodgerMove();
+    dodgerRight(rightDir);
     default:
   }
 })
