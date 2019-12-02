@@ -37,8 +37,8 @@ $(document).on("keydown",function(e){
       dodgerLeft(leftDir);
       break;
     case 39:
-    getNumericPosition();
-    dodgerRight(rightDir);
+      getNumericPosition();
+      dodgerRight(rightDir);
     default:
   }
 })
