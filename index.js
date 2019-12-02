@@ -23,6 +23,11 @@ function dodgerLeft(dir){
   if(dodgerAtBoundary() !== "leftBoundary"){
     $("#dodger")[0].style.left = `${positionNum+dir}px`;}
 }
+//Move Right
+function dodgerRight(dir){
+  if(dodgerAtBoundary() !== "rightBoundary"){
+    $("#dodger")[0].style.left = `${positionNum+dir}px`;}
+}
 
 $(document).on("keydown",function(e){
   switch (e.which) {
