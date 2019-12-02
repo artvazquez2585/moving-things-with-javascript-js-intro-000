@@ -7,8 +7,7 @@ function getNumericPosition(){
 }
 //checks for Dodger at boundary, returns true if at boundary
 function dodgerAtBoundary(){
-  var currentPosition = $("#dodger")[0].style.left.replace('px','');
-  var currentPositionNum = parseInt(currentPosition,10);
+  var currentPositionNum = getNumericPosition();
   if (currentPositionNum === 0 || currentPositionNum === 360){
     return true;
   }
