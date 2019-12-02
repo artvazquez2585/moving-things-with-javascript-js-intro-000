@@ -1,4 +1,5 @@
 const app = "I don't do much."
+var positionNum
 //returns dodger position as an integer value
 function getNumericPosition(){
   var position = $("#dodger")[0].style.left.replace('px','');
@@ -15,9 +16,9 @@ function dodgerAtBoundary(){
 }
 //Move left
 function dodgerLeft(){
-  var left = $("#dodger")[0].style.left.replace('px','');
-  var leftNumbers = parseInt(left,10) - 1;
-  $("#dodger")[0].style.left = `${leftNumbers}px`;
+  if(!==dodgerAtBoundary()){
+    var leftNumbers = parseInt(left,10) - 1;
+    $("#dodger")[0].style.left = `${leftNumbers}px`;}
 }
 
 $(document).on("keydown",function(e){
