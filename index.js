@@ -9,7 +9,7 @@ $(document).on("keydown",function(e){
   console.log(e.which);
   switch (e.which) {
 //Left Arrow
-    case 27:
+    case 37:
       dodgerLeft();
       break;
     default:
