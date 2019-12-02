@@ -16,7 +16,7 @@ function dodgerAtBoundary(){
   }
   else if (positionNum === 360){
     return "rightBoundary";
-  }  
+  }
 }
 //Move left
 function dodgerMove(dir){
